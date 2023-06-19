@@ -21,11 +21,22 @@ struct AnimalsList: View {
     var body: some View {
         VStack {
             ForEach(animals, id: \.self) { animal in
-                AnimalView(animal: animal)
+                NavigationLink(value: animal) {
+                    AnimalView(animal: animal)
+                }
+                .onAppear(perform: {
+                    print("appear")
+                })
+                .onDisappear(perform: {
+                    print("disappear")
+                })
             }
         }
         .padding(.trailing, 20)
         .padding(.leading, 20)
+        .navigationDestination(for: Animal.self, destination: { animal in
+            DetailView(animal: animal)
+        })
     }
 }
 
