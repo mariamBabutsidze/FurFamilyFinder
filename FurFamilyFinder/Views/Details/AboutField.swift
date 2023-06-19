@@ -15,8 +15,10 @@ struct AboutField: View {
             Label(
                 title: { Text(info.title) },
                 icon: {
-                    Image(systemName: info.rawValue)
-                        .foregroundColor(info.color)
+                    if !info.imageName.isEmpty {
+                        Image(systemName: info.imageName)
+                            .foregroundColor(info.color)
+                    }
                 }
             )
             .font(.callout)
@@ -37,12 +39,13 @@ struct AboutField: View {
     AboutField(info: .trained)
 }
 
-enum Field: String {
-    case trained = "trophy"
-    case vaccinated = "syringe"
-    case groomed = "scissors"
+enum Field {
+    case trained
+    case vaccinated
+    case groomed
+    case age(number: Int)
     
-    var title: String {
+    var title: LocalizedStringKey {
         switch self {
         case .trained:
             return "Trained"
@@ -50,6 +53,8 @@ enum Field: String {
             return "Vaccinated"
         case .groomed:
             return "Groomed"
+        case .age(let number):
+            return "\(number) Year"
         }
     }
     
@@ -61,6 +66,21 @@ enum Field: String {
             return .purple
         case .groomed:
             return .blue
+        case .age:
+            return .white
+        }
+    }
+    
+    var imageName: String {
+        switch self {
+        case .trained:
+            return "trophy"
+        case .vaccinated:
+            return "syringe"
+        case .groomed:
+            return "scissors"
+        case .age:
+            return ""
         }
     }
 }

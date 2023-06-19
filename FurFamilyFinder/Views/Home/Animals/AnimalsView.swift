@@ -40,7 +40,7 @@ enum Picker: Int, CaseIterable {
     case recent = 0
     case popular
     
-    var title: String {
+    var title: LocalizedStringKey {
         switch self {
         case .recent:
             return "Recent"

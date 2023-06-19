@@ -1,0 +1,173 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld Year" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "needs_review",
+                  "value" : "%lld Year"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Years"
+                }
+              }
+            }
+          }
+        },
+        "ka-GE" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld წლის"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld წლის"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "About" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ინფორმაცია"
+          }
+        }
+      }
+    },
+    "Adopt" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "შეიფარე"
+          }
+        }
+      }
+    },
+    "Details" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დეტალები"
+          }
+        }
+      }
+    },
+    "Groomed" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "დავარცხნილი"
+          }
+        }
+      }
+    },
+    "Hello" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hello"
+          }
+        },
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "გამარჯობა"
+          }
+        }
+      }
+    },
+    "Hello, World!" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Hello, World!"
+          }
+        }
+      }
+    },
+    "Hi, Mariam" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "გამარჯობა, მარიამ"
+          }
+        }
+      }
+    },
+    "Popular" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "პოპულარული"
+          }
+        }
+      }
+    },
+    "Recent" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ახალი"
+          }
+        }
+      }
+    },
+    "See all" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ყველას ნახვა"
+          }
+        }
+      }
+    },
+    "Trained" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "გაწრთვნილი"
+          }
+        }
+      }
+    },
+    "Vaccinated" : {
+      "localizations" : {
+        "ka-GE" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "აცრილი"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

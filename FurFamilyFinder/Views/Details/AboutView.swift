@@ -25,7 +25,8 @@ struct AboutView: View {
                 }
                 .padding(.bottom, 10)
                 HStack {
-                    LazyVGrid(columns: [item, item], spacing: 10) {
+                    LazyVGrid(columns: [item], spacing: 10) {
+                        AboutField(info: .age(number: animal.age))
                         if animal.groomed {
                             AboutField(info: .groomed)
                         }
@@ -38,7 +39,8 @@ struct AboutView: View {
                     }
                     .padding(.horizontal)
                     .padding(.bottom, 20)
-                    
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
                 }
             }
             .frame(maxWidth: .infinity)
