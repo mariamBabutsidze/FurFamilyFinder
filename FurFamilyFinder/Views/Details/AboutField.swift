@@ -43,7 +43,7 @@ enum Field {
     case trained
     case vaccinated
     case groomed
-    case age(number: Int)
+    case age(year: Int, month: Int)
     
     var title: LocalizedStringKey {
         switch self {
@@ -53,8 +53,8 @@ enum Field {
             return "Vaccinated"
         case .groomed:
             return "Groomed"
-        case .age(let number):
-            return "\(number) Year"
+        case let .age(year, month):
+            return "\(year) Year \(month) Month"
         }
     }
     

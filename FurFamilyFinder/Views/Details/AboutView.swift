@@ -26,7 +26,7 @@ struct AboutView: View {
                 .padding(.bottom, 10)
                 HStack {
                     LazyVGrid(columns: [item], spacing: 10) {
-                        AboutField(info: .age(number: animal.age))
+                        AboutField(info: .age(year: animal.age, month: animal.month))
                         if animal.groomed {
                             AboutField(info: .groomed)
                         }
