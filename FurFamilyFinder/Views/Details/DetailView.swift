@@ -23,7 +23,8 @@ struct DetailView: View {
                     AnimalInfo(animal: animal)
                         .padding(.leading, 20)
                         .padding(.trailing, 20)
-                    Spacer()
+                    AboutView(animal: animal)
+                        .padding(.bottom, 20)
                     HStack {
                         Spacer(minLength: 20)
                         Button {
@@ -44,6 +45,7 @@ struct DetailView: View {
                     .padding(.bottom, 20)
                 }
             }
+            .scrollIndicators(.hidden)
         }
         .toolbar(.hidden, for: .tabBar)
         .navigationBarBackButtonHidden(true)
