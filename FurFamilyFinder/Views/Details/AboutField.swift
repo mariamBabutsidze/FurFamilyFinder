@@ -45,7 +45,7 @@ enum Field {
     case groomed
     case age(year: Int, month: Int)
     
-    var title: LocalizedStringKey {
+    var title: LocalizedStringResource {
         switch self {
         case .trained:
             return "Trained"
