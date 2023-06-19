@@ -24,12 +24,6 @@ struct AnimalsList: View {
                 NavigationLink(value: animal) {
                     AnimalView(animal: animal)
                 }
-                .onAppear(perform: {
-                    print("appear")
-                })
-                .onDisappear(perform: {
-                    print("disappear")
-                })
             }
         }
         .padding(.trailing, 20)

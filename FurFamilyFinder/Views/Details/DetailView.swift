@@ -47,7 +47,6 @@ struct DetailView: View {
             }
             .scrollIndicators(.hidden)
         }
-        .toolbar(.hidden, for: .tabBar)
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(leading: Button(action : {
             self.mode.wrappedValue.dismiss()
