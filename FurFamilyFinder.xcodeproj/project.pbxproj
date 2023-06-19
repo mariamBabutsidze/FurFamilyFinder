@@ -7,13 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32390C822A3DEB9800C0AAB0 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32390C812A3DEB9800C0AAB0 /* CategoryView.swift */; };
+		32390C852A3DFEE900C0AAB0 /* CategoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32390C842A3DFEE900C0AAB0 /* CategoriesView.swift */; };
+		32390C872A3E031B00C0AAB0 /* AnimalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32390C862A3E031B00C0AAB0 /* AnimalsView.swift */; };
+		32390C892A3E034C00C0AAB0 /* CustomPickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32390C882A3E034C00C0AAB0 /* CustomPickView.swift */; };
+		32390C8C2A3E1C0D00C0AAB0 /* AnimalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32390C8B2A3E1C0D00C0AAB0 /* AnimalView.swift */; };
+		32390C8F2A3E209D00C0AAB0 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32390C8E2A3E209D00C0AAB0 /* InfoView.swift */; };
+		32390C922A3E29CF00C0AAB0 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32390C912A3E29CF00C0AAB0 /* Animal.swift */; };
+		32390C942A3E2D7C00C0AAB0 /* AnimalsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32390C932A3E2D7C00C0AAB0 /* AnimalsList.swift */; };
 		326DBC7D2A3DD66F002F0EB4 /* FurFamilyFinderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBC7C2A3DD66F002F0EB4 /* FurFamilyFinderApp.swift */; };
-		326DBC7F2A3DD66F002F0EB4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBC7E2A3DD66F002F0EB4 /* ContentView.swift */; };
 		326DBC812A3DD66F002F0EB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326DBC802A3DD66F002F0EB4 /* Assets.xcassets */; };
 		326DBC852A3DD66F002F0EB4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326DBC842A3DD66F002F0EB4 /* Preview Assets.xcassets */; };
 		326DBC8F2A3DD66F002F0EB4 /* FurFamilyFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBC8E2A3DD66F002F0EB4 /* FurFamilyFinderTests.swift */; };
 		326DBC992A3DD66F002F0EB4 /* FurFamilyFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBC982A3DD66F002F0EB4 /* FurFamilyFinderUITests.swift */; };
 		326DBC9B2A3DD66F002F0EB4 /* FurFamilyFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBC9A2A3DD66F002F0EB4 /* FurFamilyFinderUITestsLaunchTests.swift */; };
+		326DBCAB2A3DD707002F0EB4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCAA2A3DD707002F0EB4 /* MainView.swift */; };
+		326DBCB12A3DD85B002F0EB4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCB02A3DD85B002F0EB4 /* HomeView.swift */; };
+		326DBCB32A3DD869002F0EB4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCB22A3DD869002F0EB4 /* ProfileView.swift */; };
+		326DBCB52A3DD873002F0EB4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCB42A3DD873002F0EB4 /* SearchView.swift */; };
+		326DBCB72A3DD885002F0EB4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCB62A3DD885002F0EB4 /* MapView.swift */; };
+		326DBCC02A3DD913002F0EB4 /* CustomBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCBF2A3DD913002F0EB4 /* CustomBottomView.swift */; };
+		326DBCC22A3DD916002F0EB4 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCC12A3DD916002F0EB4 /* CustomTabItem.swift */; };
+		326DBCC42A3DD917002F0EB4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCC32A3DD917002F0EB4 /* CustomTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		32390C812A3DEB9800C0AAB0 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		32390C842A3DFEE900C0AAB0 /* CategoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesView.swift; sourceTree = "<group>"; };
+		32390C862A3E031B00C0AAB0 /* AnimalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsView.swift; sourceTree = "<group>"; };
+		32390C882A3E034C00C0AAB0 /* CustomPickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickView.swift; sourceTree = "<group>"; };
+		32390C8B2A3E1C0D00C0AAB0 /* AnimalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalView.swift; sourceTree = "<group>"; };
+		32390C8E2A3E209D00C0AAB0 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		32390C912A3E29CF00C0AAB0 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		32390C932A3E2D7C00C0AAB0 /* AnimalsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsList.swift; sourceTree = "<group>"; };
 		326DBC792A3DD66F002F0EB4 /* FurFamilyFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FurFamilyFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		326DBC7C2A3DD66F002F0EB4 /* FurFamilyFinderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurFamilyFinderApp.swift; sourceTree = "<group>"; };
-		326DBC7E2A3DD66F002F0EB4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		326DBC802A3DD66F002F0EB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		326DBC822A3DD66F002F0EB4 /* FurFamilyFinder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FurFamilyFinder.entitlements; sourceTree = "<group>"; };
 		326DBC842A3DD66F002F0EB4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -45,6 +67,14 @@
 		326DBC942A3DD66F002F0EB4 /* FurFamilyFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FurFamilyFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		326DBC982A3DD66F002F0EB4 /* FurFamilyFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurFamilyFinderUITests.swift; sourceTree = "<group>"; };
 		326DBC9A2A3DD66F002F0EB4 /* FurFamilyFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurFamilyFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		326DBCAA2A3DD707002F0EB4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		326DBCB02A3DD85B002F0EB4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		326DBCB22A3DD869002F0EB4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		326DBCB42A3DD873002F0EB4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		326DBCB62A3DD885002F0EB4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		326DBCBF2A3DD913002F0EB4 /* CustomBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomView.swift; sourceTree = "<group>"; };
+		326DBCC12A3DD916002F0EB4 /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
+		326DBCC32A3DD917002F0EB4 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +102,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32390C832A3DEBA500C0AAB0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				32390C8D2A3E1CDB00C0AAB0 /* Categories */,
+				32390C8A2A3E035100C0AAB0 /* Animals */,
+				326DBCB02A3DD85B002F0EB4 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		32390C8A2A3E035100C0AAB0 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				32390C862A3E031B00C0AAB0 /* AnimalsView.swift */,
+				32390C882A3E034C00C0AAB0 /* CustomPickView.swift */,
+				32390C8B2A3E1C0D00C0AAB0 /* AnimalView.swift */,
+				32390C8E2A3E209D00C0AAB0 /* InfoView.swift */,
+				32390C932A3E2D7C00C0AAB0 /* AnimalsList.swift */,
+			);
+			path = Animals;
+			sourceTree = "<group>";
+		};
+		32390C8D2A3E1CDB00C0AAB0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				32390C812A3DEB9800C0AAB0 /* CategoryView.swift */,
+				32390C842A3DFEE900C0AAB0 /* CategoriesView.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		32390C902A3E29C600C0AAB0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32390C912A3E29CF00C0AAB0 /* Animal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		326DBC702A3DD66E002F0EB4 = {
 			isa = PBXGroup;
 			children = (
@@ -95,8 +164,10 @@
 		326DBC7B2A3DD66F002F0EB4 /* FurFamilyFinder */ = {
 			isa = PBXGroup;
 			children = (
+				32390C902A3E29C600C0AAB0 /* Models */,
+				326DBCA92A3DD6E4002F0EB4 /* Views */,
 				326DBC7C2A3DD66F002F0EB4 /* FurFamilyFinderApp.swift */,
-				326DBC7E2A3DD66F002F0EB4 /* ContentView.swift */,
+				326DBCAA2A3DD707002F0EB4 /* MainView.swift */,
 				326DBC802A3DD66F002F0EB4 /* Assets.xcassets */,
 				326DBC822A3DD66F002F0EB4 /* FurFamilyFinder.entitlements */,
 				326DBC832A3DD66F002F0EB4 /* Preview Content */,
@@ -127,6 +198,28 @@
 				326DBC9A2A3DD66F002F0EB4 /* FurFamilyFinderUITestsLaunchTests.swift */,
 			);
 			path = FurFamilyFinderUITests;
+			sourceTree = "<group>";
+		};
+		326DBCA92A3DD6E4002F0EB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				32390C832A3DEBA500C0AAB0 /* Home */,
+				326DBCB22A3DD869002F0EB4 /* ProfileView.swift */,
+				326DBCB42A3DD873002F0EB4 /* SearchView.swift */,
+				326DBCB62A3DD885002F0EB4 /* MapView.swift */,
+				326DBCC62A3DD94F002F0EB4 /* TabView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		326DBCC62A3DD94F002F0EB4 /* TabView */ = {
+			isa = PBXGroup;
+			children = (
+				326DBCBF2A3DD913002F0EB4 /* CustomBottomView.swift */,
+				326DBCC12A3DD916002F0EB4 /* CustomTabItem.swift */,
+				326DBCC32A3DD917002F0EB4 /* CustomTabView.swift */,
+			);
+			path = TabView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +352,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				326DBC7F2A3DD66F002F0EB4 /* ContentView.swift in Sources */,
+				326DBCB52A3DD873002F0EB4 /* SearchView.swift in Sources */,
+				326DBCB72A3DD885002F0EB4 /* MapView.swift in Sources */,
+				32390C892A3E034C00C0AAB0 /* CustomPickView.swift in Sources */,
+				326DBCC02A3DD913002F0EB4 /* CustomBottomView.swift in Sources */,
+				32390C8C2A3E1C0D00C0AAB0 /* AnimalView.swift in Sources */,
+				326DBCB32A3DD869002F0EB4 /* ProfileView.swift in Sources */,
+				32390C822A3DEB9800C0AAB0 /* CategoryView.swift in Sources */,
+				326DBCB12A3DD85B002F0EB4 /* HomeView.swift in Sources */,
 				326DBC7D2A3DD66F002F0EB4 /* FurFamilyFinderApp.swift in Sources */,
+				32390C922A3E29CF00C0AAB0 /* Animal.swift in Sources */,
+				326DBCC42A3DD917002F0EB4 /* CustomTabView.swift in Sources */,
+				32390C872A3E031B00C0AAB0 /* AnimalsView.swift in Sources */,
+				32390C852A3DFEE900C0AAB0 /* CategoriesView.swift in Sources */,
+				326DBCAB2A3DD707002F0EB4 /* MainView.swift in Sources */,
+				32390C8F2A3E209D00C0AAB0 /* InfoView.swift in Sources */,
+				32390C942A3E2D7C00C0AAB0 /* AnimalsList.swift in Sources */,
+				326DBCC22A3DD916002F0EB4 /* CustomTabItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
