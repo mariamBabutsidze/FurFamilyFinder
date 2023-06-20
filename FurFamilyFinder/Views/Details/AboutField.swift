@@ -74,11 +74,11 @@ enum Field {
     var imageName: String {
         switch self {
         case .trained:
-            return "trophy"
+            return Symbol.trophy.title
         case .vaccinated:
-            return "syringe"
+            return Symbol.syringe.title
         case .groomed:
-            return "scissors"
+            return Symbol.scissors.title
         case .age:
             return ""
         }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InfoView: View {
-    let type: Info
+    let type: Symbol
     let title: String
     
     var body: some View {
@@ -23,10 +23,5 @@ struct InfoView: View {
 }
 
 #Preview {
-    InfoView(type: Info.name, title: "Totoro")
-}
-
-enum Info: String {
-    case name = "pawprint"
-    case location = "mappin.circle"
+    InfoView(type: Symbol.paw, title: "Totoro")
 }

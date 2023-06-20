@@ -23,9 +23,9 @@ struct AnimalInfo: View {
                 }
                 Spacer()
             }
-            InfoView(type: Info.name, title: animal.name)
+            InfoView(type: Symbol.paw, title: animal.name)
                 .padding(.top, 2)
-            InfoView(type: Info.location, title: animal.location)
+            InfoView(type: Symbol.location, title: animal.location)
                 .padding(.top, 1)
                 .padding(.bottom, 20)
             Spacer()

@@ -22,7 +22,7 @@ struct HomeView: View {
                         .toolbar {
                             ToolbarItem {
                                 Button(action: {}, label: {
-                                    Image(systemName: "line.3.horizontal.decrease.circle")
+                                    Symbol.filter.image
                                 })
                                 .tint(.black)
                             }

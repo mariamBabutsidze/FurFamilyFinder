@@ -45,13 +45,13 @@ enum TabType: Int, CaseIterable {
     var tabItem: CustomTabItem {
         switch self {
         case .home:
-            return .init(imageName: "house")
+            return .init(imageName: Symbol.house.title)
         case .search:
-            return .init(imageName: "magnifyingglass")
+            return .init(imageName: Symbol.search.title)
         case .map:
-            return .init(imageName: "mappin")
+            return .init(imageName: Symbol.map.title)
         case .profile:
-            return .init(imageName: "person.crop.circle")
+            return .init(imageName: Symbol.profile.title)
         }
     }
 }

@@ -14,7 +14,7 @@ struct LikeButton: View {
         Button(action: {
             liked.toggle()
         }) {
-            Image(systemName: liked ? "heart.fill" : "heart")
+            (liked ? Symbol.heartFull : Symbol.heart).image
                 .foregroundColor(.red)
         }
     }

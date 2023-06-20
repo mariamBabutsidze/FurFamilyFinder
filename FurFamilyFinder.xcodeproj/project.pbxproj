@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,6 +36,8 @@
 		326DBCC02A3DD913002F0EB4 /* CustomBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCBF2A3DD913002F0EB4 /* CustomBottomView.swift */; };
 		326DBCC22A3DD916002F0EB4 /* CustomTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCC12A3DD916002F0EB4 /* CustomTabItem.swift */; };
 		326DBCC42A3DD917002F0EB4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCC32A3DD917002F0EB4 /* CustomTabView.swift */; };
+		32A9D8732A41F42E006683FD /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9D8722A41F42E006683FD /* Symbol.swift */; };
+		32A9D87C2A422B7B006683FD /* SFSymbol in Frameworks */ = {isa = PBXBuildFile; productRef = 32A9D87B2A422B7B006683FD /* SFSymbol */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,7 @@
 		326DBCBF2A3DD913002F0EB4 /* CustomBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBottomView.swift; sourceTree = "<group>"; };
 		326DBCC12A3DD916002F0EB4 /* CustomTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabItem.swift; sourceTree = "<group>"; };
 		326DBCC32A3DD917002F0EB4 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		32A9D8722A41F42E006683FD /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32A9D87C2A422B7B006683FD /* SFSymbol in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +220,7 @@
 			children = (
 				32390CA32A40A38D00C0AAB0 /* Localizable.xcstrings */,
 				32390CA52A40A44900C0AAB0 /* Test.xcstrings */,
+				32A9D8722A41F42E006683FD /* Symbol.swift */,
 				32390C902A3E29C600C0AAB0 /* Models */,
 				326DBCA92A3DD6E4002F0EB4 /* Views */,
 				326DBC7C2A3DD66F002F0EB4 /* FurFamilyFinderApp.swift */,
@@ -291,6 +296,9 @@
 			dependencies = (
 			);
 			name = FurFamilyFinder;
+			packageProductDependencies = (
+				32A9D87B2A422B7B006683FD /* SFSymbol */,
+			);
 			productName = FurFamilyFinder;
 			productReference = 326DBC792A3DD66F002F0EB4 /* FurFamilyFinder.app */;
 			productType = "com.apple.product-type.application";
@@ -364,6 +372,9 @@
 				"ka-GE",
 			);
 			mainGroup = 326DBC702A3DD66E002F0EB4;
+			packageReferences = (
+				32A9D87A2A422B7B006683FD /* XCLocalSwiftPackageReference "../SFSymbol" */,
+			);
 			productRefGroup = 326DBC7A2A3DD66F002F0EB4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -423,6 +434,7 @@
 				32390C982A40758900C0AAB0 /* LikeButton.swift in Sources */,
 				326DBCC42A3DD917002F0EB4 /* CustomTabView.swift in Sources */,
 				32390C872A3E031B00C0AAB0 /* AnimalsView.swift in Sources */,
+				32A9D8732A41F42E006683FD /* Symbol.swift in Sources */,
 				32390C852A3DFEE900C0AAB0 /* CategoriesView.swift in Sources */,
 				326DBCAB2A3DD707002F0EB4 /* MainView.swift in Sources */,
 				32390C8F2A3E209D00C0AAB0 /* InfoView.swift in Sources */,
@@ -780,6 +792,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		32A9D87A2A422B7B006683FD /* XCLocalSwiftPackageReference "../SFSymbol" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../SFSymbol;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		32A9D87B2A422B7B006683FD /* SFSymbol */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SFSymbol;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 326DBC712A3DD66E002F0EB4 /* Project object */;
 }
