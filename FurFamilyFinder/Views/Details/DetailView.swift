@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import os
 
 struct DetailView: View {
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     let animal: Animal
+    let logger = Logger(subsystem: "api.com.furFamilyFinder", category: "navigation")
     
     var body: some View {
         GeometryReader { geo in
@@ -55,6 +57,9 @@ struct DetailView: View {
                 .foregroundColor(.black)
         })
         .navigationTitle("Details")
+        .onAppear {
+            logger.info("detailView with: \(animal.name)")
+        }
     }
 }
 

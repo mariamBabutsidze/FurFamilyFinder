@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+import os
 
 struct CustomPickView: View {
     @Binding var selectedIndex: Int
     let type: Picker
+    let logger = Logger(subsystem: "api.com.furFamilyFinder", category: "picker")
     
     var body: some View {
         VStack {
             Button {
                 if selectedIndex != type.rawValue {
                     selectedIndex = type.rawValue
+                    let title = String(localized: type.title)
+                    logger.log("index: \(selectedIndex)")
+                    logger.log("name: \(title)")
                 }
             } label: {
                 HStack {
