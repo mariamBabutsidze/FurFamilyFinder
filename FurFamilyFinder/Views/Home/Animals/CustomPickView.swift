@@ -9,7 +9,7 @@ import SwiftUI
 import os
 
 struct CustomPickView: View {
-    @Binding var selectedIndex: Int
+    @Binding var selectedIndex: Int!
     let type: Picker
     let logger = Logger(subsystem: "api.com.furFamilyFinder", category: "picker")
     

@@ -19,6 +19,6 @@ struct CategoryView: View {
     }
 }
 
-#Preview {
-    CategoryView(name: .cat)
-}
+//#Preview {
+//    CategoryView(name: .cat)
+//}

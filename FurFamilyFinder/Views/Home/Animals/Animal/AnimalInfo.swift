@@ -28,7 +28,6 @@ struct AnimalInfo: View {
             InfoView(type: Symbol.location, title: animal.location)
                 .padding(.top, 1)
                 .padding(.bottom, 20)
-            Spacer()
         }
     }
 }

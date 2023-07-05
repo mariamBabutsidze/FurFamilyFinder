@@ -12,19 +12,17 @@ struct AnimalView: View {
     
     var body: some View {
         VStack{
-            GeometryReader { geo in
-                Image(animal.imageName)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: geo.size.width, height: 200)
-                    .contentShape(Rectangle())
-                    .clipped()
-                    .cornerRadius(20)
-                AnimalInfo(animal: animal)
-                    .padding(.top, 210)
-            }
+            Rectangle()
+                .contentShape(Rectangle())
+                .overlay {
+                    Image(animal.imageName)
+                        .resizable()
+                        .scaledToFill()
+                }
+                .aspectRatio(2/1, contentMode: .fill)
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+            AnimalInfo(animal: animal)
         }
-        .frame(height: 350)
     }
 }
 

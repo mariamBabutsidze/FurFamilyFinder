@@ -14,26 +14,24 @@ struct HomeView: View {
     var body: some View {
         NavigationStack {
             ScrollView(.vertical) {
-                VStack {
-                    CategoriesView()
-                        .padding()
-                        .font(.largeTitle)
-                        .bold()
-                        .toolbar {
-                            ToolbarItem {
-                                Button(action: {}, label: {
-                                    Symbol.filter.image
-                                })
-                                .tint(.black)
-                            }
-                            ToolbarItem (placement: .navigation) {
-                                Text("Hi, Mariam")
-                                    .font(.largeTitle)
-                                    .bold()
-                            }
+                CategoriesView()
+                    .padding()
+                    .font(.largeTitle)
+                    .bold()
+                    .toolbar {
+                        ToolbarItem {
+                            Button(action: {}, label: {
+                                Symbol.filter.image
+                            })
+                            .tint(.black)
                         }
-                    AnimalsView(selectedIndex: 0)
-                }
+                        ToolbarItem (placement: .navigation) {
+                            Text("Hi, Mariam")
+                                .font(.largeTitle)
+                                .bold()
+                        }
+                    }
+                AnimalsView(selectedIndex: 0)
             }
             .scrollIndicators(.hidden)
             .scrollClipDisabled()

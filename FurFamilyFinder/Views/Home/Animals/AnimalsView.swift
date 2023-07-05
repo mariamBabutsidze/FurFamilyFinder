@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AnimalsView: View {
-    @State var selectedIndex: Int
+    @State var selectedIndex: Int?
     
     var body: some View {
         VStack {
@@ -27,7 +27,19 @@ struct AnimalsView: View {
             }
             .padding(.trailing, 20)
             .padding(.leading, 20)
-            AnimalsList(listType: Picker(rawValue: selectedIndex) ?? Picker.recent)
+            ScrollView(.horizontal) {
+                HStack(spacing: 0) {
+                    AnimalsList(listType: Picker(rawValue: 0) ?? Picker.recent)
+                        .containerRelativeFrame([.horizontal])
+                        .tag(0)
+                    AnimalsList(listType: Picker(rawValue: 1) ?? Picker.recent)
+                        .containerRelativeFrame([.horizontal])
+                        .tag(1)
+                }
+                .scrollTargetLayout()
+            }
+            .scrollIndicators(.hidden)
+            .scrollTargetBehavior(.paging)
         }
     }
 }
