@@ -8,14 +8,17 @@
 import SwiftUI
 
 struct AnimalsView: View {
-    @State var selectedIndex: Int?
+    @State var selectedPicker: Picker?
+    private let pickers: [Picker] = Picker.allCases
     
     var body: some View {
-        VStack {
-            HStack {
-                CustomPickView(selectedIndex: $selectedIndex, type: .recent)
-                CustomPickView(selectedIndex: $selectedIndex, type: .popular)
-                    .padding()
+        VStack(spacing: 20) {
+            HStack(alignment: .top) {
+                SegmentedPicker(selection: $selectedPicker, items: pickers, content: { item in
+                    Text(item?.title ?? "")
+                        .font(.subheadline)
+                        .bold()
+                })
                 Spacer()
                 Button {
                     
@@ -28,16 +31,15 @@ struct AnimalsView: View {
             .padding(.trailing, 20)
             .padding(.leading, 20)
             ScrollView(.horizontal) {
-                HStack(spacing: 0) {
-                    AnimalsList(listType: Picker(rawValue: 0) ?? Picker.recent)
-                        .containerRelativeFrame([.horizontal])
-                        .tag(0)
-                    AnimalsList(listType: Picker(rawValue: 1) ?? Picker.recent)
-                        .containerRelativeFrame([.horizontal])
-                        .tag(1)
+                LazyHStack(spacing: 0) {
+                    ForEach(pickers) { picker in
+                        AnimalsList(listType: picker)
+                            .containerRelativeFrame(.horizontal)
+                    }
                 }
                 .scrollTargetLayout()
             }
+            .scrollPosition(id: $selectedPicker)
             .scrollIndicators(.hidden)
             .scrollTargetBehavior(.paging)
         }
@@ -45,10 +47,14 @@ struct AnimalsView: View {
 }
 
 #Preview {
-    AnimalsView(selectedIndex: Picker.recent.rawValue)
+    AnimalsView(selectedPicker: Picker.recent)
 }
 
-enum Picker: Int, CaseIterable {
+enum Picker: Int, CaseIterable, Identifiable {
+    var id: Self {
+        self
+    }
+    
     case recent = 0
     case popular
     

@@ -31,7 +31,7 @@ struct HomeView: View {
                                 .bold()
                         }
                     }
-                AnimalsView(selectedIndex: 0)
+                AnimalsView(selectedPicker: Picker.recent)
             }
             .scrollIndicators(.hidden)
             .scrollClipDisabled()
