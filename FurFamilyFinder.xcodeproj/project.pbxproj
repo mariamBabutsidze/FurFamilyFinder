@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,6 +38,7 @@
 		326DBCC42A3DD917002F0EB4 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326DBCC32A3DD917002F0EB4 /* CustomTabView.swift */; };
 		32A9D8732A41F42E006683FD /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A9D8722A41F42E006683FD /* Symbol.swift */; };
 		32A9D87C2A422B7B006683FD /* SFSymbol in Frameworks */ = {isa = PBXBuildFile; productRef = 32A9D87B2A422B7B006683FD /* SFSymbol */; };
+		32E120582A5F0F1000F029D7 /* SFSymbol in Frameworks */ = {isa = PBXBuildFile; productRef = 32E120572A5F0F1000F029D7 /* SFSymbol */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32A9D87C2A422B7B006683FD /* SFSymbol in Frameworks */,
+				32E120582A5F0F1000F029D7 /* SFSymbol in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +300,7 @@
 			name = FurFamilyFinder;
 			packageProductDependencies = (
 				32A9D87B2A422B7B006683FD /* SFSymbol */,
+				32E120572A5F0F1000F029D7 /* SFSymbol */,
 			);
 			productName = FurFamilyFinder;
 			productReference = 326DBC792A3DD66F002F0EB4 /* FurFamilyFinder.app */;
@@ -373,7 +376,7 @@
 			);
 			mainGroup = 326DBC702A3DD66E002F0EB4;
 			packageReferences = (
-				32A9D87A2A422B7B006683FD /* XCLocalSwiftPackageReference "../SFSymbol" */,
+				32E120562A5F0F1000F029D7 /* XCRemoteSwiftPackageReference "SFSymbolMacros" */,
 			);
 			productRefGroup = 326DBC7A2A3DD66F002F0EB4 /* Products */;
 			projectDirPath = "";
@@ -795,16 +798,25 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		32A9D87A2A422B7B006683FD /* XCLocalSwiftPackageReference "../SFSymbol" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../SFSymbol;
+/* Begin XCRemoteSwiftPackageReference section */
+		32E120562A5F0F1000F029D7 /* XCRemoteSwiftPackageReference "SFSymbolMacros" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mariamBabutsidze/SFSymbolMacros";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
 		32A9D87B2A422B7B006683FD /* SFSymbol */ = {
 			isa = XCSwiftPackageProductDependency;
+			productName = SFSymbol;
+		};
+		32E120572A5F0F1000F029D7 /* SFSymbol */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 32E120562A5F0F1000F029D7 /* XCRemoteSwiftPackageReference "SFSymbolMacros" */;
 			productName = SFSymbol;
 		};
 /* End XCSwiftPackageProductDependency section */
